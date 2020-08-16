@@ -1,6 +1,7 @@
 ﻿namespace Benchmark
 
 open BenchmarkDotNet.Attributes
+open BenchmarkDotNet.Jobs
 
 [<SimpleJob(RuntimeMoniker.Net472)>]
 [<SimpleJob(RuntimeMoniker.NetCoreApp30)>]
