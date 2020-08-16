@@ -10,6 +10,8 @@ It uses [Benchmark Dotnet](https://github.com/dotnet/BenchmarkDotNet) for perfor
 Results
 ---
 
+*n = 10_000_000*
+
 | Method |           Job |       Runtime |         N |       Mean |    Error |   StdDev |     Median |
 |------- |-------------- |-------------- |---------- |-----------:|---------:|---------:|-----------:|
 |    For |    .NET 4.7.2 |    .NET 4.7.2 |  10000000 |   222.9 ms |  2.53 ms |  2.24 ms |   223.3 ms |
@@ -23,6 +25,9 @@ Results
 |  PIter | .NET Core 3.0 | .NET Core 3.0 |  10000000 |   166.5 ms |  3.30 ms |  5.23 ms |   166.8 ms |
 |    Rec | .NET Core 3.0 | .NET Core 3.0 |  10000000 |   146.7 ms |  2.93 ms |  7.93 ms |   144.1 ms |
 
+
+*n = 50_000_000*
+
 | Method |           Job |       Runtime |         N |       Mean |    Error |   StdDev |     Median |
 |------- |-------------- |-------------- |---------- |-----------:|---------:|---------:|-----------:|
 |    For |    .NET 4.7.2 |    .NET 4.7.2 |  50000000 | 1,256.0 ms | 24.37 ms | 29.01 ms | 1,254.0 ms |
@@ -35,6 +40,9 @@ Results
 |   Iter | .NET Core 3.0 | .NET Core 3.0 |  50000000 | 1,241.0 ms | 12.84 ms | 12.01 ms | 1,238.6 ms |
 |  PIter | .NET Core 3.0 | .NET Core 3.0 |  50000000 |   935.4 ms | 18.65 ms | 22.20 ms |   939.0 ms |
 |    Rec | .NET Core 3.0 | .NET Core 3.0 |  50000000 |   825.6 ms |  8.84 ms |  8.27 ms |   822.5 ms |
+
+
+*n = 100_000_000*
 
 | Method |           Job |       Runtime |         N |       Mean |    Error |   StdDev |     Median |
 |------- |-------------- |-------------- |---------- |-----------:|---------:|---------:|-----------:|
