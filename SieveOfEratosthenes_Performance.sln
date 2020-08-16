@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SieveOfEratosthenes_Performance", "SieveOfEratosthenes_Performance\SieveOfEratosthenes_Performance.fsproj", "{F8E8FA15-03F3-407A-8DF2-5385230BA55D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8E8FA15-03F3-407A-8DF2-5385230BA55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E8FA15-03F3-407A-8DF2-5385230BA55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E8FA15-03F3-407A-8DF2-5385230BA55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E8FA15-03F3-407A-8DF2-5385230BA55D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD7829E8-7A1E-412C-AA99-50AE630BEC67}
+	EndGlobalSection
+EndGlobal
