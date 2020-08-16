@@ -3,25 +3,25 @@
 open BenchmarkDotNet.Attributes
 open BenchmarkDotNet.Jobs
 
-[<SimpleJob(RuntimeMoniker.Net472, baseline = true)>]
+[<SimpleJob(RuntimeMoniker.Net472)>]
 [<SimpleJob(RuntimeMoniker.NetCoreApp30)>]
 type SieveOfEratosthenes() =
 
     [<Params(10_000_000, 50_000_000, 100_000_000)>]
-    let mutable n = Unchecked.defaultof<int>
+    member val N = 10_000 with get, set
 
     [<Benchmark>]
-    member this.For() = SieveOfEratosthenes.siebFor n
+    member this.For() = SieveOfEratosthenes.siebFor this.N
 
     [<Benchmark>]
-    member this.While() = SieveOfEratosthenes.siebWhile n
+    member this.While() = SieveOfEratosthenes.siebWhile this.N
 
     [<Benchmark>]
-    member this.Iter() = SieveOfEratosthenes.siebIter n
+    member this.Iter() = SieveOfEratosthenes.siebIter this.N
 
     [<Benchmark>]
-    member this.PIter() = SieveOfEratosthenes.siebPIter n
+    member this.PIter() = SieveOfEratosthenes.siebPIter this.N
 
     [<Benchmark>]
-    member this.Rec() = SieveOfEratosthenes.siebRec n
+    member this.Rec() = SieveOfEratosthenes.siebRec this.N
 
