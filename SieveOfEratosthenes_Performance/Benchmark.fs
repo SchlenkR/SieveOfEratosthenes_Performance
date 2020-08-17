@@ -6,7 +6,6 @@ open BenchmarkDotNet.Jobs
 [<SimpleJob(RuntimeMoniker.Net472)>]
 [<SimpleJob(RuntimeMoniker.NetCoreApp30)>]
 type SieveOfEratosthenes() =
-
     [<Params(10_000_000, 50_000_000, 100_000_000)>]
     member val N = 10_000 with get, set
 
@@ -25,3 +24,10 @@ type SieveOfEratosthenes() =
     [<Benchmark>]
     member this.Rec() = SieveOfEratosthenes.siebRec this.N
 
+module Program =
+    open BenchmarkDotNet.Running
+
+    [<EntryPoint>]
+    let main _ =
+        BenchmarkRunner.Run<SieveOfEratosthenes>() |> ignore
+        0
